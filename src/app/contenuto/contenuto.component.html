@@ -1,0 +1,4 @@
+<span *ngFor="let riga of contenuto; last as isLast">
+  <p *ngIf="!isLast">{{ riga }}</p>
+  <p *ngIf="isLast && isLastVisible">{{ riga }}</p>
+</span>

@@ -1,0 +1,14 @@
+<div class="container">
+  <app-titolo
+    [titolo]="data.title">
+  </app-titolo>
+  <app-contenuto
+      [contenuto]="data.content"
+      [isLastVisible]="isLastVisible">
+  </app-contenuto>
+  <app-bottone
+    buttonName="Mostra/Nascondi ultima riga"
+    (buttonClickEvent)="onButtonClicked()"
+  >
+  </app-bottone>
+</div>
